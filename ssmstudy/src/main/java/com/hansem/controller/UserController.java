@@ -28,6 +28,8 @@ public class UserController {
         System.out.println("userId:"+userId);
         User user = this.userService.getUserById(userId); 
         LOGGER.info(user.toString());
+        int b = 2;
+		System.out.println(b);
         return user;  
 	}
 
