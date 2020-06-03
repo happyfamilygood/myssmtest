@@ -30,6 +30,8 @@ public class UserController {
         System.out.println("userId:"+userId);
         User user = this.userService.getUserById(userId); 
         LOGGER.info(user.toString());
+        int c = 1;
+		System.out.println(c);
         int d = 4;
 		System.out.println(4);
         return user;  
