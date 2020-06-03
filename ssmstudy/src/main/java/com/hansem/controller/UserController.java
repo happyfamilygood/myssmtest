@@ -24,13 +24,11 @@ public class UserController {
 
 	@RequestMapping(value="/{id}",method=RequestMethod.GET) 
 	public @ResponseBody User getUserInJson(@PathVariable String id) {
-		int d = 4;
 		int userId = Integer.parseInt(id);  
         User user = this.userService.getUserById(userId); 
         LOGGER.info(user.toString());
-        int b = 2;
-		System.out.println(b);
-		 int c = 3;
+		int c = 3;
+		System.out.println(c);
         return user;  
 	}
 
