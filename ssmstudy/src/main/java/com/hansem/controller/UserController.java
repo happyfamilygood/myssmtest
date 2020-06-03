@@ -24,9 +24,12 @@ public class UserController {
 
 	@RequestMapping(value="/{id}",method=RequestMethod.GET) 
 	public @ResponseBody User getUserInJson(@PathVariable String id) {
+		int a = 1;
 		int userId = Integer.parseInt(id);  
         System.out.println("userId:"+userId);
-        User user = this.userService.getUserById(userId);  
+        User user = this.userService.getUserById(userId); 
+        int b = 2;
+        System.out.println(b);
         LOGGER.info(user.toString());
         return user;  
 	}
