@@ -29,11 +29,9 @@ public class UserController {
 		int userId = Integer.parseInt(id);  
         System.out.println("userId:"+userId);
         User user = this.userService.getUserById(userId); 
-        int b = 2;
-        System.out.println(b);
-        b++;
-        System.out.println(b);
         LOGGER.info(user.toString());
+        int d = 4;
+		System.out.println(4);
         return user;  
 	}
 
