@@ -27,7 +27,6 @@ public class UserController {
 		int userId = Integer.parseInt(id);  
         User user = this.userService.getUserById(userId); 
         LOGGER.info(user.toString());
-		 int c = 3;
         return user;  
 	}
 
