@@ -30,6 +30,7 @@ public class UserController {
         LOGGER.info(user.toString());
         int b = 2;
 		System.out.println(b);
+		 int c = 3;
         return user;  
 	}
 
